@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ray's Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
+			<h1 id="colorlib-logo"><a href="index.html"><span class="img" style="background-image: url(images/ray.jpg);"></span>Po-Jui "Ray" Huang</a></h1>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a href="index.html">About Me</a></li>
+					<li class="colorlib-active"><a href="project.html">Project</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class= "col-10" align="right">
+				<p>MS Student @ <a href="http://www.nycu.edu.tw/" target="popup">NYCU</a></p>
+			</div>	
+			<div class="colorlib-footer">
+				<!-- <h2>Newsletter</h2> -->
+				<div class="d-flex justify-content-center">
+				<h2 class="ftco-animate"><a href="pdf/Ray_CV.pdf"><span class="icon-user"></span></a></h2>
+				&emsp;
+				<h2 class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100000682564273"><span class="icon-facebook"></span></a></h2>
+				&emsp;
+				<!-- <h2 class="ftco-animate"><a href="https://www.linkedin.com/in/po-kai-chang"><span class="icon-linkedin"></span></a></h2>
+				&emsp; -->
+				<h2 class="ftco-animate"><a href="https://github.com/ray0727"><span class="icon-github"></span></a></h2>
+				&emsp;
+				<h2 class="ftco-animate"><a href="mailto:rayhuang.ee09@nycu.edu.tw"><span class="icon-envelope"></span></a></h2>
+				&emsp;
+				<!-- <h2 class="ftco-animate"><a href="pdf/nctu_thesis_david.pdf"><span class="icon-file-pdf-o"></span></a></h2> -->
+			</div>
+
+		</div>
+		</aside> <!-- END COLORLIB-ASIDE -->
+
+		<div id="colorlib-main">
+			<section class="ftco-section ftco-bread">
+				<div class="container">
+					<div class="row no-gutters slider-text justify-content-left align-items-center">
+	          <div class="col-md-8 ftco-animate">
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Projects</span></p>
+
+	            <div class="fancy-collapse-panel">
+	            <h1 class="bread"><a href="project.html" class="page-scroll" style="color:black">Projects and Experiences</a>
+	            </h1>
+	            </div>
+	            
+
+	        </div>
+	        <header class="site-navbar">
+				<nav class="site-navigation position-relative text-left" role="navigation">
+
+				<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+				  <li class="has-children">
+					<a href="#about-section" class="nav-link">My Projects</a>
+					<ul class="dropdown">
+					<li><a href="#mmWave" class="nav-link page-scroll">Milimeter Wave Radar for Robot Navigation in Smoke</a></li>
+
+					<li><a href="#SubT" class="nav-link page-scroll">SubT Challenge Urban Circuit</a></li>
+					
+					<li><a href="#RL-Simulation" class="nav-link page-scroll">Deep Reinforcement Learning in Simulation</a></li>
+
+					<li><a href="#Sensing" class="nav-link page-scroll">Pyrobot-Pick and Place Mission</a></li>
+
+					<li><a href="#MOOS" class="nav-link page-scroll">MOOS & ROS waypoints navigation</a></li>
+
+					</ul>
+				  </li>
+				</ul>
+			  </nav>
+			  </header>
+		  </div>
+		  </div>
+
+		  </section>
+
+		  <div class="col-8">
+		  <div class="ftco-section-3">
+			  <div class="row">
+				<!-- mmwave -->
+				<section id="mmWave">
+					<h2 class="mb-4"><br>Milimeter Wave Radar for Robot Navigation in Smoke</h2>
+					<article class="6u 12u$(xsmall) work-item">
+						<iframe width="560" height="315" src="https://drive.google.com/file/d/1D0EOqQj7gR2Eys6BjwQwAvsWv5IpuMJg/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>						
+						<div class="col-md-12 ftco-animate" data-animate-effect="fadeInLeft">
+						<p>
+							we propose the use of single-chip millimeter-wave (mmWave) radar, which is lightweight and inexpensive, for learning-based autonomous navigation. However, 
+							because mmWave radar signals are often noisy and sparse, we propose a cross-modal contrastive learning for representation (CM-CLR) method that maximizes 
+							the agreement between mmWave radar data and LiDAR data in the training stage to enable autonomous navigation using radar signal.
+						</p>
+						<p>
+							In the team, I am responsibile for the hardware system of the UGV and execute the experiment. Besides, I also
+							takeover the future work for reconstructing lidar points to mmwave since Gazebo doesn't provide radar informations.
+						</p>
+						<p>
+							<a href="https://ieeexplore.ieee.org/document/9362209" class="btn btn-primary btn-learn">Paper<i class="icon-download4"></i></a>
+							<a href="https://arg-nctu.github.io/projects/deeprl-mmWave.html" class="btn btn-primary btn-learn">Website<i class="icon-download4"></i></a>
+						</p>
+						</div>
+					</article>
+				</section>
+				<hr width="70%" size="12" align="left">
+
+				<!-- subt -->
+				<section id="SubT">
+					<h2 class="mb-4"><br>DARPA SubT Urban Challenge</h2>
+					<article class="6u 12u$(xsmall) work-item">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/UovOCe-2xr4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>						
+						<div class="col-md-12 ftco-animate" data-animate-effect="fadeInLeft">
+						<p>
+							The DARPA Subterranean (SubT) Challenge aims to develop innovative technologies that would augment operations underground. The SubT Challenge will 
+							explore new approaches to rapidly map, navigate, search, and exploit complex underground environments. 
+							I participated the Urban challenge with my team and our robots in a decommissioned nuclear power plant.
+						</p>
+						<p>
+							In the team, I am responsible for the UGV hardware system, and the spherical nodes and miniature cars for communication systems.
+						</p>
+						<p>
+							<a href="pdf/jfr-subt-nctu.pdf" class="btn btn-primary btn-learn">Paper<i class="icon-download4"></i></a>
+							<a href="https://vimeo.com/501143422" class="btn btn-primary btn-learn">Video<i class="icon-download4"></i></a>
+						</p>
+						</div>
+					</article>
+				</section>
+				<hr width="70%" size="12" align="left">
+
+				<!-- Gazebo -->
+				<section id="RL-Simulation">
+					<h2 class="mb-4"><br>Deep Reinforcement Learning in Simulation</h2>
+					<img width="200" height="320" src="images/environment.png" title="Environment">
+					<img width="560" height="320" src="images/narrow.png" title="Narrow Gate">
+					<article class="6u 12u$(xsmall) work-item">					
+						<div class="col-md-12 ftco-animate" data-animate-effect="fadeInLeft">
+						<li>Implementation of different reinforcement learning algorithms such as RDPG and D4PG
+							by PyTorch, the DRL agents were trained by interacting with simulation environment via
+							Gazebo simulator.</li>
+						<li>Using X1 in simulation, and Husky for real robot experiment</li>
+						<li>Obtain navigation skills by training in virtual SubT cave environment</li>
+						<li>I design a narrow gate scenario in gazebo for training in order to urge UGV to pass
+							through narrow passage, and evaluate the performance via sim-to-real approach.</li>
+						
+						</div>
+					</article>
+				</section>
+				<hr width="70%" size="12" align="left">
+
+				  <!-- Pyrobot-Pick and Place Mission -->
+				  <section id="Sensing">
+				  <h2 class="mb-4"><br>Pyrobot-Pick and Place Mission in Simulation(2021/07)</h2>
+				  <article class="6u 12u$(xsmall) work-item">
+					  <iframe width="560" height="315" src="https://drive.google.com/file/d/1zqRbF4eG3APCy4DQ51-cqZeeudZuepm5/preview" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+					  <div class="col-md-12 ftco-animate" data-animate-effect="fadeInLeft">
+					  <li>Identify the object and pick it up, then move to the target location and place the item.</li>
+					  <li>Task 1: Object Detection Mask R-CNN</li>
+					  <li>Task 2: Pose Estimation and Pick Dope</li>
+					  <li>Task 3: Move to destination A*</li>
+					  <li>Task 4: Place in the box</li>
+					  <p>
+					  I am responsibile for task2 and task3, using Dope for pose estimation, and A* algorithm for 
+					  goal navigation.
+					  </p>
+					  </div>
+				  </article>
+				  <br>
+				  <p><a href="pdf/sis2021_final_team_2_ppt.pdf" class="btn btn-primary btn-learn">Report<i class="icon-download"></i></a></p>
+				  </section>
+				  
+				  <hr width="70%" size="12" align="left">
+
+				  <!-- MOOS -->
+				<section id="MOOS">
+					<h2 class="mb-4"><br>MOOS & ROS waypoints navigation</h2>
+					<article class="6u 12u$(xsmall) work-item">
+						<iframe width="560" height="315" src="https://drive.google.com/file/d/18aM98NMFNnYplaE5Rql869Nxn4JW1vKU/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>						
+						<div class="col-md-12 ftco-animate" data-animate-effect="fadeInLeft">
+						<p>
+							I audit Marine Autonomy, Sensing and Communications(MOOS-IvP) course given by
+							MIT, the course focus mainly on software and algorithms for autonomous decision making by vehicles operating in the 
+							ocean environments. We accomplish the final project of the course at Bamboo Lake, Taiwan. 
+							Executing multi-vehicles waypoints navigation by MOOS using Duckieboats which are developed by our laboratory.
+						</p>
+						<p>
+							I am responsible for the communication between multi-vehicles and base station.
+						</p>
+						<p>
+							<a href="https://oceanai.mit.edu/2.680" class="btn btn-primary btn-learn">Course Website<i class="icon-download4"></i></a>
+						</p>
+						</div>
+					</article>
+				</section>
+				<hr width="70%" size="12" align="left">
+
+	
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
