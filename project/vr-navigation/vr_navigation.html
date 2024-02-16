@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Multi-Radar Inertial Odometry using mmWave Imaging Radar."
+    />
+    <meta name="keywords" content="SLAM, Radar, Inertial, Doppler" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MRIO</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+
+      gtag("config", "G-PYVRSFMDRL");
+    </script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="./static/css/index.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start" style="flex-grow: 1; justify-content: center">
+          <a class="navbar-item" href="http://rpl.ri.cmu.edu/">
+            <span class="icon">
+              <i class="fas fa-home"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                Multi-Radar Inertial Odometry using mmWave Imaging Radar
+              </h1>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://www.cs.cmu.edu/~juiteh/">Jui-Te Huang</a
+                  >,</span
+                >
+                <span class="author-block">
+                  <a href="https://cryptum169.github.io/">Ruoyang Xu</a>,</span
+                >
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/akshay-hinduja/"
+                    >Akshay Hinduja</a
+                  >,</span
+                >
+                <span class="author-block">
+                  <a href="http://www.cs.cmu.edu/~kaess/"
+                    >Michael Kaess</a
+                  ></span
+                >
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Carnegie Mellon University</span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- PDF Link. -->
+                  <span class="link-block">
+                    <a
+                      href="https://arxiv.org/abs/2311.08608"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+
+                  <!-- Video Link. -->
+                  <span class="link-block">
+                    <a
+                      href="https://youtu.be/NSbzZhHe2zY?si=6llW8PXaA3Cz1gO3"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </span>
+                      <span>Video</span>
+                    </a>
+                  </span>
+
+                  <!-- Code Link. -->
+                  <!-- <span class="link-block">
+                    <a
+                      href=" "
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Dataset Link. -->
+                  <!-- <span class="link-block">
+                    <a
+                      href=" "
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon"><i class="far fa-images"></i> </span>
+                      <span>Data</span>
+                    </a>
+                  </span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                State estimation is a crucial component for the successful
+                implementation of robotic systems, relying on sensors such as
+                cameras, LiDAR, and IMUs. However, in real-world scenarios, the
+                performance of these sensors is degraded by challenging
+                environments, e.g. adverse weather conditions and low-light
+                scenarios. The emerging 4D imaging radar technology is capable
+                of providing robust perception in adverse conditions. Despite
+                its potential, challenges remain for indoor settings where noisy
+                radar data does not present clear geometric features. Moreover,
+                disparities in radar data resolution and field of view (FOV) can
+                lead to inaccurate measurements. While prior research has
+                explored radar-inertial odometry based on Doppler velocity
+                information, challenges remain for the estimation of 3D motion
+                because of the discrepancy in the FOV and resolution of the
+                radar sensor. In this paper, we address Doppler velocity
+                measurement uncertainties. We present a method to optimize body
+                frame velocity while managing Doppler velocity uncertainty.
+                Based on our observations, we propose a dual imaging radar
+                configuration to mitigate the challenge of discrepancy in radar
+                data. To attain high-precision 3D state estimation, we introduce
+                a strategy that seamlessly integrates radar data with a
+                consumer-grade IMU sensor using fixed-lag smoothing
+                optimization. Finally, we evaluate our approach using real-world
+                3D motion data.
+              </p>
+
+              <!-- <p>
+                Our overall reconstruction approach comprises the following
+                components:
+              </p>
+              <ul>
+                <li>
+                  A differentiable volumetric renderer that models the
+                  propagation of acoustic spherical wavefronts.
+                </li>
+                <li>
+                  A representation of 3D surfaces as zero-level sets of neural
+                  implicit functions.
+                </li>
+                <li>
+                  A regularized rendering loss for 3D reconstruction using
+                </li>
+              </ul> -->
+              
+            </div>
+          </div>
+        </div>
+        <!--/ Abstract. -->
+
+        <!-- Paper video. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Video</h2>
+            <div class="publication-video">
+              <iframe
+                src="https://www.youtube.com/embed/NSbzZhHe2zY?si=6llW8PXaA3Cz1gO3;showinfo=0"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        &nbsp
+
+        <!-- <div class="columns is-centered has-text-centered">
+          <div class="content">
+            <h2 class="title is-3">Simulated Experiments (HoloOcean)</h2>
+            <p>
+              We use HoloOcean, an underwater simulator to collect datasets of
+              different objects of various shapes and sizes. Our method outputs
+              3D reconstructions of much higher quality compared to existing
+              state-of-the-art methods.
+            </p>
+            <video
+              id="dollyzoom"
+              autoplay
+              controls
+              muted
+              loop
+              playsinline
+              height="100%"
+            >
+              <source src="./static/videos/sim.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        &nbsp -->
+      </div>
+
+    </section>
+
+    <!-- <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@article{qadri2022neural,
+  title={Neural Implicit Surface Reconstruction using Imaging Sonar},
+  author={Qadri, Mohamad and Kaess, Michael and Gkioulekas, Ioannis},
+  journal={arXiv preprint arXiv:2209.08221},
+  year={2022}
+}</code></pre>
+      </div>
+    </section> -->
+
+    <footer class="footer">
+      <div class="container">
+        
+
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                Website template borrowed from
+                <a href="https://nerfies.github.io/">Nerfies</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </body>
